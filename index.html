@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="game.ico"/>
+    <title href="game.png">The Bowling Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="index1.css">
+    <script type="text/javascript" src="bow.js"></script>
+  </head>
+  <body>
+
+    <section class="hero is-warning">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-2 grey-dark">
+            The bowling game
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+        <div class="box">
+          <div class="table">
+            <table id="newTable">
+              <td>
+                <thead>
+                  <th>Rounds</th>
+                  <th>First Try</th>
+                  <th>Second Try</th>
+                  <th>Spare</th>
+                  <th>Strike</th>
+                  <th>Score:<div id="total_score"></div></th>
+                </thead>
+              </td>
+              <tr>
+                <th>1</th>
+                <th><input class="input is-rounded is-link" type="number" placeholder="Your score here" id="1_1"></th>
+                <th><input class="input is-rounded is-link" type="number" placeholder="Your score here" id="1_2"></th>
+                <th></th>
+                <th></th>
+                <th><div id="score_1"></div></th>
+              </tr>
+            </table>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id="newButton">
+      <a class="button is-dark is-fullwidth is-outlined" onclick="addTable()">Throw!</a>
+    </div>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Develop</strong> by <a href="https://www.facebook.com/jacinto.ortiz.98?ref=bookmarks">Jacinto Ortiz</a>.
+        </p>
+      </div>
+    </footer>
+
+  </body>
+</html>
